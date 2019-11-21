@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  web:
+    container_name: api-flask
+    build: .
+    image: python3/alphine
+    ports:
+      - 5000:5000

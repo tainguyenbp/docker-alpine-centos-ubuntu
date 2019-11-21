@@ -1,0 +1,24 @@
+version: "3"
+services:
+  foodtrucks.centos:
+    networks: 
+      - foodtrucks-net
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - 5000:5000
+
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+    networks: 
+      - foodtrucks-net
+    environment:
+      discovery.type: 
+        single-node
+    ports:
+      - 9300:9300
+      - 9200:9200
+
+networks:
+  foodtrucks-net:
