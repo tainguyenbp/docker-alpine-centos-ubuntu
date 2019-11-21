@@ -1,7 +1,7 @@
 SF Food Trucks
 ===
 
-Download source code from: https://github.com/hahai1412/docker-assignment
+Download source code from: https://github.com/tainguyenbp/docker-alpine-centos-ubuntu
 
 1. Build the flask app base on Dockerfile
 2. Create the app with this image above:
@@ -13,3 +13,8 @@ Download source code from: https://github.com/hahai1412/docker-assignment
 + Start the flask app container
     + Run the falsk app base on this image above
     + Run of them --detach (or -d ), name them with --name es on 5000:5000
+	
+Reference
+===
+https://github.com/Docker-Hub-frolvlad/
+https://github.com/mhart/alpine-node
